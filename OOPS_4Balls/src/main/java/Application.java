@@ -33,24 +33,18 @@ public class Application extends PApplet {
     @Override
     public void setup() {
 
-        ball1 = new Ball(0, canvasHeight / 5, 1);
-        ball2 = new Ball(0, 2 * canvasHeight / 5, 2);
-        ball3 = new Ball(0, 3 * canvasHeight / 5, 3);
-        ball4 = new Ball(0, 4 * canvasHeight / 5, 4);
+        ball1 = new Ball(0, canvasHeight / 5, 1, DIAMETER);
+        ball2 = new Ball(0, 2 * canvasHeight / 5, 2, DIAMETER);
+        ball3 = new Ball(0, 3 * canvasHeight / 5, 3, DIAMETER);
+        ball4 = new Ball(0, 4 * canvasHeight / 5, 4, DIAMETER);
     }
 
     @Override
     public void draw() {
 
-        drawBall(ball1);
-        drawBall(ball2);
-        drawBall(ball3);
-        drawBall(ball4);
-    }
-
-    public void drawBall(Ball ball){
-
-        ellipse(ball.x, ball.y, DIAMETER, DIAMETER);
-        ball.update();
+        ball1.draw(this);
+        ball2.draw(this);
+        ball3.draw(this);
+        ball4.draw(this);
     }
 }
