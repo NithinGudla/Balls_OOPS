@@ -12,7 +12,6 @@ public class Ball {
         this.y = y;
         this.speed = speed;
         this.diameter = diameter;
-
     }
 
     public Ball(int y, int speed, int diameter) {
@@ -20,7 +19,6 @@ public class Ball {
         this.y = y;
         this.speed = speed;
         this.diameter = diameter;
-
     }
 
     public void update(){
